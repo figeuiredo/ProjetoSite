@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+  <link rel="icon" href="imagens/icone.webp">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Escalação</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="fonts.css">
+
+</head>
+<body>
+	<header>
+		<div class="logo"><img src="imagens/logo.png"></div>
+    <nav class="Menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="escalacoes.html">Elenco</a>
+        <li><a href="loja.html">Loja</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+		</nav>
+
+		<div class="social">
+      <ul>
+        <li><a href="https://pt-br.facebook.com/corinthians/" class="icon-facebook2" target="_blank"></a></li>
+        <li><a href="https://twitter.com/corinthians" class="icon-twitter" target="_blank"></a></li>
+        
+        <li><a href="https://github.com/figeuiredo/ProjetoSite" class="icon-github" target="_blank"></a></li>
+        <li><a href="https://www.youtube.com/user/corinthiansoficial" class="icon-youtube" target="_blank"></a></li>
+        <li><a href="https://www.instagram.com/corinthians/?hl=pt-br" class="icon-instagram" target="_blank"></a></li>
+
+      </ul>
+    </div>
+
+		<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		
+	</header><!-- /header -->
+
+
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      $('.menu-toggle').click(function(){
+        $('nav').toggleClass('active')
+      });
+
+      $('ul li').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).toggleClass('active');
+      });
+    });
+
+
+  </script>
+
+
+
+
+
+	<div style="text-align: center; margin-top: 12%;">
+      <h1>- JOGADORES DO TIMÃO -</h1>
+
+      <div style="text-align: center; margin-top: 12%; width: 94%; margin: 4em auto; font-size: 20px; line-height: 30px;">
+      <p class="text-info Recuo">O Corinthians tem 23 jogadores relacionados para o jogo desta sexta-feira, às 21h (de Brasília), contra o Flamengo, pela 28ª rodada do Campeonato Brasileiro.</p>
+      <br>
+      
+      <p class="text-info Recuo3">Escalação provável: Cássio, Gabriel, Léo Santos, Henrique e Danilo Avelar; Ralf e Douglas; Romero, Jadson, Mateus Vital e Clayson.
+Desfalques: Renê Júnior (lesão no joelho esquerdo), Paulo Roberto (inflamação na coxa esquerda), Jonathas (fibrose na coxa direita) e Fagner (fibrose na coxa esquerda)
+Pendurados: Clayson, Roger, Henrique, Romero, Gabriel e Paulo Roberto</p>
+     <br>
+      <p>Arbitragem: Arbitragem: Paulo Roberto Alves Júnior apita o jogo, auxiliado por Luciano Roggenbaum e Luiz H Souza Santos Renesto, todos do Paraná
+Tempo real: no GloboEsporte.com, a partir das 20h</p>
+      </div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="imagens/cassio.jpg" style="text-align: center;width:600px;height:600px;">
+  <div class="text">Goleiro</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="imagens/henr.jpg" style="text-align: center;width:600px;height:600px;">
+  <div class="text">Zagueiros</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="imagens/pedro.jpg" style="text-align: center;width:600px;height:600px;">
+  <div class="text">Zagueiro</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="imagens/fagnel.jpg" style="text-align: center;width:600px;height:600px;">
+  <div class="text">Lateral - Direito</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="imagens/pedinho.jpg" style="text-align: center;width:600px;height:600px;">
+  <div class="text">Ponta Direita</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="imagens/sheik.jpg" style="text-align: center;width:600px;height:600px;">
+  <div class="text">Atacante</div>
+</div>
+
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+   <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+    
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+	
+		<!-- rodapé -->
+		<footer>
+			<p>©2018 - Paulo Vítor</p>
+		</footer>
+
+
+		</div>
+
+<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script>
+<script type="js/chibungo.js"></script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+/**
+ Folha de estilo projeto site
+ @author Paulo Vítor Santos Figueiredo
+
+ */
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family:sans-serif;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+
+
+} 
+
+img {
+	max-width: 100%; /* todas as imagens do site ficam responsivas */
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+/* Inicio das redes sociais */
+.social{
+	position: fixed;
+	left: 0;
+	top: 200px;
+	z-index: 2000;
+}
+.social ul {
+	list-style:none;
+}
+.social ul li a{
+	display: inline-block;
+	color: #fff;
+	background: #696969;
+	padding: 10px 15px;
+	text-decoration:none;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition: all 500ms ease;
+}
+.social ul li a:hover{
+	padding: 10px 30px;
+}
+.social ul li .icon-facebook2{ background: #3b5998;}
+.social ul li .icon-twitter{ background: #00abf0;}
+.social ul li .icon-instagram{ background: #990099;}
+.social ul li .icon-github{ background: #BDBDBD;}
+.social ul li .icon-youtube{ background: #c50000;}
+
+
+header{
+	position: absolute;
+	top:0;
+	left:0;
+	padding: 0 100px;
+	background-color: #696969;
+	width:100%;
+	box-sizing: border-box;
+	z-index: 3px;
+}
+
+header .logo{
+	height:50px;
+	width: 50px;
+	
+	float:left;
+	
+}
+
+header nav{
+	float:right;
+}
+
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li{
+	list-style: none;
+	position: relative;
+}
+
+header nav ul li.sub-menu:before{
+	content: '\f0d7';
+	font-family: fontAwesome;
+	position: absolute;
+	line-height: 50px;
+	color:#000000;
+	right:8px;
+
+}
+
+
+
+header nav ul li.active ul{
+	display: block;
+}
+
+header nav ul li ul li{
+	display: block;
+	width: 200px;
+}
+
+header nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	height:50px;
+	line-height: 50px;
+	padding: 0 25px;
+	display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{
+	background:	#8c92a2;
+}
+
+.menu-toggle{
+	color:white;
+	float:right;
+	line-height: 50px;
+	font-size:24px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 991px){
+
+	header{
+		padding:0 20px;
+	}
+
+	.menu-toggle{
+		display: block;
+	}
+
+	header nav{
+		position: absolute;
+		width:100%;
+		height: calc(100vh - 50px);
+		background-color: #fff;
+		top:50px;
+		left:-100%;
+		transition: 0.5s;
+	}
+
+	header nav.active{
+		left:0px;
+	}
+
+	header nav ul{
+		display: block;
+		text-align: center;
+	}
+
+	header nav ul li a{
+		border-bottom: 1px solid rgba(0,0,0,.7);
+	}
+
+	header nav ul li.active ul{
+	    position: relative;
+	    background-color: #003e6f;
+    }
+
+    header nav ul li ul li{
+    	width:100vw;
+    	text-align: center;
+    }
+
+}
+
+
+
+.Layout{
+	height: 350px;
+	padding-top: 200px;
+	background-attachment: fixed;
+	background size: cover;
+	background position: center;
+}
+
+.Layout p{
+	text-align: center;
+	color: #e3e4e5;
+	font-size: 2.5em;
+}
+
+
+.DivTexto{
+	background-color:#8c92a2;
+	color: #fff;
+	max-width: 100%
+
+}
+
+.Recuo{
+	text-indent: 4em;
+}
+
+.Recuo2{
+	text-indent: 4em;
+}
+
+.Recuo3{
+	text-indent: 4em;
+}
+
+
+.Recuuo{
+	text-indent: 4em;
+}
+
+.Recuuo2{
+	text-indent: 4em;
+}
+
+.Recuuo3{
+	text-indent: 4em;
+}
+.Recuuo4{
+	text-indent: 4em;
+}
+
+.Recuuo5{
+	text-indent: 4em;
+}
+
+.Recuuo6{
+	text-indent: 4em;
+}
+.Recuuo7{
+	text-indent: 4em;
+}
+
+.Recuuo8{
+	text-indent: 4em;
+}
+
+.Recuuo9{
+	text-indent: 4em;
+}
+.Recuuo10{
+	text-indent: 4em;
+}
+
+.Recuuo11{
+	text-indent: 4em;
+}
+
+
+
+.Destaque{
+	padding: 150px 0px 150px 0px; /*box model*/
+	max-width: 1024px;
+	margin: 0 auto;
+}
+/***** blocos ******/
+#destaque{
+	max-width: 1024px;
+	height: 320px;
+	margin-left: 15%;
+
+
+}
+.blocos{
+	width: 30.76%; /* (315/1024)*100 ----*/
+	height: 320px;
+	float: left;
+	margin-left: 1.95%; /*--- (20/1024)* ---*/
+	border: 1px solid #696969;
+	text-align: center;
+	position: relative;/*posicionamento do botao*/
+
+
+}
+
+.blocos p{
+	padding: 0px 10px 0px 10px;
+	text-align: left;
+}
+
+.blocos a{
+	width: 80px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color:#696969;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+footer{
+	width: 100%;
+	background-color: #696969;
+	margin-top: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	color: 	#ffffff;
+	font-size: 0.75em;
+}
+
+/***** Formulário de Contato *****/
+#contato{
+	padding-top: 80px;
+	width: 70%;
+	margin: 0 auto;
+}
+#contato h1{
+	color: 	#aaaaaa;
+	
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	margin-bottom: 30px;
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 40px 10px;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	margin-bottom: 30px;
+	resize: none;
+}
+
+#contato input[type=submit]{
+	background-color: #000000;
+	border-radius: 5px;
+	border: 1px solid #ffffff;
+	padding: 10px 25px 10px 25px;
+	color: #ffffff;
+}
+
+
+* {box-sizing: border-box}
+.mySlides {display: block;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+ width: 80%;
+ height: 90%;
+
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  user-select: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+ 
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(f,f,f,f);
+}
+
+
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
